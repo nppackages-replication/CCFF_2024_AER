@@ -1,4 +1,4 @@
-# Cattaneo, Titiunik and Vazquez-Bare (2017, JPAM)
+# Cattaneo, Crump, Farrell and Feng (2019)
 
 This work was supported in part by the National Science Foundation through grants [SES-1947805](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1947805) and [SES-2019432](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2019432).
 
