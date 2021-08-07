@@ -1,7 +1,7 @@
 ********************************************************************************
 ** Replication file: "On Binscatter"
 ** Authors: M. D. Cattaneo, R. Crump, M. Farrell and Y. Feng
-** Last update: 10-JUL-2021
+** Last update: 6-AUG-2021
 ********************************************************************************
 clear all
 capture log close
@@ -377,11 +377,11 @@ binstest y x w, at(0) deriv(2) testshapel(0) bins(2,2) testshape(3,3)
 
 *** Figure 7a ***
 use CCFF_2021_Binscatter, clear
-binsreg y x w, at(0) by(t) line(0,0) cb(1,1) lineplotopt(lwidth(vthin)) bysymbols(O S) bycolors(blue green) bylpatterns(solid dot) legend(order(2 "Group 0" 5 "Group 1") position(0) bplacement(neast) cols(1)) ylabel(12[2]22, labcolor(white) notick nogrid) xlabel(none) graphregion(color(white) margin(large)) plotregion(lcolor(black)) xtitle("X") ytitle("Y") name(Fig7a)
+binsreg y x w, at(0) by(t) line(0,0) cb(1,1) lineplotopt(lwidth(vthin)) bysymbols(O S) bycolors(blue green) bylpatterns(solid dot) legend(order(2 "Group 0" 5 "Group 1") position(0) bplacement(neast) cols(1)) ylabel(12[2]22, labcolor(white) notick nogrid) xlabel(none) graphregion(color(white) margin(large)) plotregion(lcolor(black)) xtitle("X") ytitle("Y") xline(0.235, lcolor(gs15) lwidth(4)) xline(0.22 0.25, lcolor(gs8) lpattern(shortdash)) name(Fig7a)
 
 *** Figure 7b ***
 use CCFF_2021_Binscatter, clear
-binsreg y x w, at(0) by(t) dots(2,2) line(2,2) cb(3,3) lineplotopt(lwidth(vthin)) bysymbols(O S) bycolors(blue green) bylpatterns(solid dot) legend(order(2 "Group 0" 5 "Group 1") position(0) bplacement(neast) cols(1)) ylabel(12[2]22, labcolor(white) notick nogrid) xlabel(none) graphregion(color(white) margin(large)) plotregion(lcolor(black)) xtitle("X") ytitle("Y") name(Fig7b)
+binsreg y x w, at(0) by(t) dots(2,2) line(2,2) cb(3,3) lineplotopt(lwidth(vthin)) bysymbols(O S) bycolors(blue green) bylpatterns(solid dot) legend(order(2 "Group 0" 5 "Group 1") position(0) bplacement(neast) cols(1)) ylabel(12[2]22, labcolor(white) notick nogrid) xlabel(none) graphregion(color(white) margin(large)) plotregion(lcolor(black)) xtitle("X") ytitle("Y") xline(0.235, lcolor(gs15) lwidth(4)) xline(0.22 0.25, lcolor(gs8) lpattern(shortdash)) name(Fig7b)
 
 ********************************************************************************
 ** Table 3: Two-group Comparison
@@ -424,7 +424,7 @@ append using fig8a_data_25
 append using CCFF_2021_Binscatter
 drop if t==2
 
-tw scatter y x if br == . & inrange(y,12,23), color(bluishgray) msize(vsmall) || rarea CB_l CB_r CB_x if br == 25, color(blue%75) fintensity(20) lwidth(none) || scatter dots_fit dots_x if br == 25, color(blue) msize(small) || line line_fit line_x if br == 25, color(blue) cmissing(n) lwidth(vthin) || rcap CI_l CI_r CI_x if br == 25, lcolor(blue) || rarea CB_l CB_r CB_x if br == 75, color(green%75) fintensity(20) lwidth(none) || scatter dots_fit dots_x if br == 75, color(green) msymbol(S) msize(small) || line line_fit line_x if br == 75, color(green) lpattern(dash) cmissing(n) lwidth(vthin) || rcap CI_l CI_r CI_x if br == 75, lcolor(green) graphregion(color(white) margin(large)) legend(order(3 "0.25 quantile" 7 "0.75 quantile" ) position(0) bplacement(neast) cols(1)) xlabel(none) ylabel(12[1]23, labcolor(white) notick nogrid) plotregion(lcolor(black)) ytitle("Y") xtitle("X") name(Fig8a)
+tw scatter y x if br == . & inrange(y,12,23), color(bluishgray) msize(vsmall) || rarea CB_l CB_r CB_x if br == 25, color(blue%75) fintensity(20) lwidth(none) || scatter dots_fit dots_x if br == 25, color(blue) msize(small) || line line_fit line_x if br == 25, color(blue) cmissing(n) lwidth(vthin) || rcap CI_l CI_r CI_x if br == 25, lcolor(blue) || rarea CB_l CB_r CB_x if br == 75, color(green%75) fintensity(20) lwidth(none) || scatter dots_fit dots_x if br == 75, color(green) msymbol(S) msize(small) || line line_fit line_x if br == 75, color(green) lpattern(dash) cmissing(n) lwidth(vthin) || rcap CI_l CI_r CI_x if br == 75, lcolor(green) graphregion(color(white) margin(large)) legend(order(3 "0.25 quantile" 7 "0.75 quantile" ) position(0) bplacement(neast) cols(1)) xlabel(none) ylabel(12[1]23, labcolor(white) notick nogrid)  ytitle("Y") xtitle("X") xline(0.31, lcolor(gs15) lwidth(49)) xline(0.12 0.50, lcolor(gs8) lpattern(shortdash)) plotregion(lcolor(black)) name(Fig8a)
 
 *** Figure 8b ***
 use CCFF_2021_Binscatter, clear
@@ -444,7 +444,7 @@ append using fig8b_data_25
 append using CCFF_2021_Binscatter
 drop if t==2
 
-tw scatter y x if br == . & inrange(y,12,23), color(bluishgray) msize(vsmall) || rarea CB_l CB_r CB_x if br == 25, color(blue%75) fintensity(20) lwidth(none) || scatter dots_fit dots_x if br == 25, color(blue) msize(small) || line line_fit line_x if br == 25, color(blue) lwidth(vthin) || rcap CI_l CI_r CI_x if br == 25, lcolor(blue) || rarea CB_l CB_r CB_x if br == 75, color(green%75) fintensity(20) lwidth(none) || scatter dots_fit dots_x if br == 75, color(green) msymbol(S) msize(small) || line line_fit line_x if br == 75, color(green) lpattern(dash) lwidth(vthin) || rcap CI_l CI_r CI_x if br == 75, lcolor(green) graphregion(color(white) margin(large)) legend(order(3 "0.25 quantile" 7 "0.75 quantile" ) position(0) bplacement(neast) cols(1))  xlabel(none) ylabel(12[1]23, labcolor(white) notick nogrid) plotregion(lcolor(black)) ytitle("Y") xtitle("X") name(Fig8b)
+tw scatter y x if br == . & inrange(y,12,23), color(bluishgray) msize(vsmall) || rarea CB_l CB_r CB_x if br == 25, color(blue%75) fintensity(20) lwidth(none) || scatter dots_fit dots_x if br == 25, color(blue) msize(small) || line line_fit line_x if br == 25, color(blue) lwidth(vthin) || rcap CI_l CI_r CI_x if br == 25, lcolor(blue) || rarea CB_l CB_r CB_x if br == 75, color(green%75) fintensity(20) lwidth(none) || scatter dots_fit dots_x if br == 75, color(green) msymbol(S) msize(small) || line line_fit line_x if br == 75, color(green) lpattern(dash) lwidth(vthin) || rcap CI_l CI_r CI_x if br == 75, lcolor(green) graphregion(color(white) margin(large)) legend(order(3 "0.25 quantile" 7 "0.75 quantile" ) position(0) bplacement(neast) cols(1))  xlabel(none) ylabel(12[1]23, labcolor(white) notick nogrid) ytitle("Y") xtitle("X") xline(0.31, lcolor(gs15) lwidth(49)) xline(0.12 0.50, lcolor(gs8) lpattern(shortdash)) plotregion(lcolor(black)) name(Fig8b)
 
 
 ************************************************************
