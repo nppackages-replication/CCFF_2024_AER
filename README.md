@@ -10,6 +10,8 @@ https://nppackages.github.io/replication
 
 - Dataset: [csv](CCFF_2021_Binscatter.csv) | [dta](CCFF_2021_Binscatter.dta)
 
+- Python implementation: [main](CCFF_2021_Binscatter.py)
+
 - R implementation: [main](CCFF_2021_Binscatter.R)
 
 - Stata implementation: [main](CCFF_2021_Binscatter.do)
@@ -17,6 +19,8 @@ https://nppackages.github.io/replication
 ## Empirical Application: Supplemental Appendix
 
 - Dataset: [csv](CCFF_2021_Binscatter--SA.csv) | [dta](CCFF_2021_Binscatter--SA.dta)
+
+- Python implementation: [main](CCFF_2021_Binscatter--SA.py)
 
 - R implementation: [main](CCFF_2021_Binscatter--SA.R)
 
