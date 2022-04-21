@@ -1,4 +1,4 @@
-# Cattaneo, Crump, Farrell and Feng (2021)
+# Cattaneo, Crump, Farrell and Feng (2022)
 
 This work was supported in part by the National Science Foundation through grants [SES-1947805](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1947805) and [SES-2021432](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2021432).
 
