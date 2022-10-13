@@ -11,15 +11,15 @@ https://nppackages.github.io/replication
 
 - Akcigit, Grigsby, Nicholas and Stantcheva (2022): [Taxation and Innovation in the Twentieth Century](https://doi.org/10.1093/qje/qjab022), _Quarterly Journal of Economics_ 137 (1): 329-385.
 
-  - Dataset: [csv](CCFF_2022_xxxx.csv) | [dta](CCFF_2022_xxxx.dta)
+  - Dataset: [csv](CCFF_2022_innovation.csv) | [dta](CCFF_2022_innovation.dta)
 
 - Moretti (2021): [The Effect of High-Tech Clusters on the Productivity of Top Inventors](https://doi.org/10.1257/aer.20191277), _American Economic Review_ 111 (10): 3328-3375.
 
-  - Dataset: [csv](CCFF_2022_xxxx.csv) | [dta](CCFF_2022_xxxx.dta)
+  - Dataset: [csv](CCFF_2022_inventors.csv) | [dta](CCFF_2022_inventors.dta)
 
-- [American Community Survey](https://www.census.gov/programs-surveys/acs)
+- U.S. Census (2013-2017): [American Community Survey](https://www.census.gov/programs-surveys/acs)
 
-  - Dataset: [csv](CCFF_2022_xxxx.csv) | [dta](CCFF_2022_xxxx.dta)
+  - Dataset: [csv](CCFF_2022_acs.csv) | [dta](CCFF_2022_acs.dta)
 
 ## Replication Files
 
