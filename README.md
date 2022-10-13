@@ -6,25 +6,29 @@ This work was supported in part by the National Science Foundation through grant
 
 https://nppackages.github.io/replication
 
-## Empirical Application: Main Paper
 
-- Dataset: [csv](CCFF_2021_Binscatter.csv) | [dta](CCFF_2021_Binscatter.dta)
+## Data Sources
 
-- Python implementation: [main](CCFF_2021_Binscatter.py)
+- Akcigit, Grigsby, Nicholas and Stantcheva (2022): [Taxation and Innovation in the Twentieth Century](https://doi.org/10.1093/qje/qjab022), _Quarterly Journal of Economics_ 137 (1): 329-385.
 
-- R implementation: [main](CCFF_2021_Binscatter.R)
+  - Dataset: [csv](CCFF_2022_xxxx.csv) | [dta](CCFF_2022_xxxx.dta)
 
-- Stata implementation: [main](CCFF_2021_Binscatter.do)
+- Moretti (2021): [The Effect of High-Tech Clusters on the Productivity of Top Inventors](https://doi.org/10.1257/aer.20191277), _American Economic Review_ 111 (10): 3328-3375.
 
-## Empirical Application: Supplemental Appendix
+  - Dataset: [csv](CCFF_2022_xxxx.csv) | [dta](CCFF_2022_xxxx.dta)
 
-- Dataset: [csv](CCFF_2021_Binscatter--SA.csv) | [dta](CCFF_2021_Binscatter--SA.dta)
+- [American Community Survey](https://www.census.gov/programs-surveys/acs)
 
-- Python implementation: [main](CCFF_2021_Binscatter--SA.py)
+  - Dataset: [csv](CCFF_2022_xxxx.csv) | [dta](CCFF_2022_xxxx.dta)
 
-- R implementation: [main](CCFF_2021_Binscatter--SA.R)
+## Replication Files
 
-- Stata implementation: [main](CCFF_2021_Binscatter--SA.do)
+- Python implementation: [main](CCFF_2022_Binscatter.py)
+
+- R implementation: [main](CCFF_2022_Binscatter.R)
+
+- Stata implementation: [main](CCFF_2022_Binscatter.do)
+
 
 ## Reference
 
