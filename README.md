@@ -24,7 +24,7 @@ https://nppackages.github.io/replication
 
 - Moretti (2021): [The Effect of High-Tech Clusters on the Productivity of Top Inventors](https://doi.org/10.1257/aer.20191277), _American Economic Review_ 111 (10): 3328-3375.
 
-- Dataset: [dta 1](CCFF_2022_M_1.csv) | [dta 2](CCFF_2022_M_2.dta)
+- Dataset: [dta 1](CCFF_2022_M_1.zip) | [dta 2](CCFF_2022_M_2.zip)
 
 - Python implementation: [main](CCFF_2022_Binscatter_M.py)
 
