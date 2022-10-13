@@ -17,7 +17,7 @@ https://nppackages.github.io/replication
 
   - Dataset: [csv](CCFF_2022_inventors.csv) | [dta](CCFF_2022_inventors.dta)
 
-- U.S. Census (2013-2017): [American Community Survey](https://www.census.gov/programs-surveys/acs)
+- U.S. Census (2013-2017): [American Community Survey](https://www.census.gov/programs-surveys/acs).
 
   - Dataset: [csv](CCFF_2022_acs.csv) | [dta](CCFF_2022_acs.dta)
 
