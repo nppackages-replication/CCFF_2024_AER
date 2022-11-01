@@ -1,7 +1,7 @@
 ********************************************************************************
 * Replication "On Binscatter"
 * Cattaneo, Crump, Farrell and Feng (2022)
-* Date: 13-OCT-2022
+* Date: 31-OCT-2022
 * M Application
 ********************************************************************************
 
@@ -19,7 +19,7 @@ sort x
 ********************************************************************************
 * Figure 8(a) Scatter plot
 ********************************************************************************
-scatter y x, msize(tiny) graphregion(color(white) margin(large)) plotregion(lcolor(black)) ytitle("log Number of Patents per Inventor per Year") xtitle("log Cluster Size") ylabel(, nogrid)
+scatter y x, msize(tiny) graphregion(color(white) margin(large)) plotregion(lcolor(black)) ytitle("log Number of Patents per Inventor per Year") xtitle("log Cluster Size") ylabel(, nogrid) xlabel(-11(2)-1) 
 graph export "graphs/M_scatter.pdf", replace
 graph export "graphs/M_scatter.png", replace
 
@@ -58,7 +58,7 @@ gen binsreg = 0
 append using $main/data/temp/tmpM1binsreg
 replace binsreg = 1 if missing(binsreg)
 
-tw (scatter dots_fit dots_x if binsreg==0, color(dkorange)) (scatter dots_fit dots_x if binsreg==1, color(black)), graphregion(color(white) margin(large)) plotregion(lcolor(black)) ytitle("log Number of Patents per Inventor per Year") xtitle("log Cluster Size") ylabel(, nogrid) legend(order(1 "Residualized" 2 "Semi-linear" ) row(1) ring(0) position(11))
+tw (scatter dots_fit dots_x if binsreg==0, color(dkorange)) (scatter dots_fit dots_x if binsreg==1, color(black)), graphregion(color(white) margin(large)) plotregion(lcolor(black)) ytitle("log Number of Patents per Inventor per Year") xtitle("log Cluster Size") ylabel(, nogrid) legend(order(1 "Residualized" 2 "Semi-linear" ) row(1) ring(0) position(11)) xlabel(-11(1)-1)
 graph export "graphs/M_covariateAdjustments.pdf", replace
 graph export "graphs/M_covariateAdjustments.png", replace
 

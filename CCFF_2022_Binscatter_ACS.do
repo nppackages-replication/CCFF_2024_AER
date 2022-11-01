@@ -1,7 +1,7 @@
 ********************************************************************************
 * Replication "On Binscatter"
 * Cattaneo, Crump, Farrell and Feng (2022)
-* Date: 13-OCT-2022
+* Date: 31-OCT-2022
 * ACS Application
 ********************************************************************************
 
@@ -13,7 +13,6 @@ clear all
 cd "$main"
 
 use CCFF_2022_ACS_1, clear
-keep y x uninsuredRate perCapitaIncome percentBachelorsEdu medianAge percentHsEdu ueRate
 
 ********************************************************************************
 * Figure 1(a) Plain scatter
