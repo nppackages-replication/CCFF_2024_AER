@@ -13,17 +13,24 @@ https://nppackages.github.io/replication
 
 - Dataset: [dta](CCFF_2023_AER--AGNS.dta)
 
-- Stata implementation: [main](CCFF_2023_AER--AGNS.do)
+- Python Implementation: [main](CCFF_2024_AER--AGNS.py)
+
+- R implementation: [main](CCFF_2024_AER--AGNS.R)
+
+- Stata implementation: [main](CCFF_2024_AER--AGNS.do)
 
 
 ## Replication 2
 
 - Moretti (2021): [The Effect of High-Tech Clusters on the Productivity of Top Inventors](https://doi.org/10.1257/aer.20191277), _American Economic Review_ 111 (10): 3328-3375.
 
-- Dataset: [dta 1](CCFF_2023_AER--M1.zip) | [dta 2](CCFF_2023_AER--M2.zip)
+- Dataset: [dta 1](CCFF_2024_AER--M1.zip) | [dta 2](CCFF_2024_AER--M2.zip)
 
-- Stata implementation: [main](CCFF_2023_AER--M.do)
+- Python implementation: [main](CCFF_2024_AER--M.py)
 
+- R implementation: [main](CCFF_2024_AER--M.R)
+
+- Stata implementation: [main](CCFF_2024_AER--M.do)
 
 ## Reference
 
