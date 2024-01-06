@@ -1,12 +1,13 @@
 ********************************************************************************
 * Replication "On Binscatter"
 * Cattaneo, Crump, Farrell, and Feng (2024)
-* Date: 10-NOV-2023
+* Date: 05-JAN-2024
 * AGNS Application
 ********************************************************************************
 
 * ******************************************************************************
 * INSTRUCTIONS
+* 0. Ensure all necessary packages are installed: run CCFF_2024_configStata.do
 * 1. Set main directory below
 * 2. Create folders "graphs" and "data/temp" in this directory
 * ******************************************************************************

@@ -1,11 +1,11 @@
 ################################################################################
 # Replication "On Binscatter"
-# Cattaneo, Crump, Farrell and Feng (2023)
-# Date: 8-JUL-2023
+# Cattaneo, Crump, Farrell and Feng (2024)
+# Date: 5-JAN-2024
 # AGNS Application
 ################################################################################
 
-# source("CCFF_2023_Binscatter_AGNS.R")
+# source("CCFF_2024_AER--AGNS.R")
 
 rm(list=ls())
 
@@ -18,7 +18,7 @@ library(lfe)
 
 ##### Note that some figures may differ from the manuscript because of the evaluation point of the control variables; see the discussion in the Supplemental Appendix
 
-data <- read_dta(file='CCFF_2023_AGNS.dta')
+data <- read_dta(file='CCFF_2024_AER--AGNS.dta')
 data2 <- data[complete.cases(data), ]
 
 ################################################################################
@@ -150,7 +150,7 @@ dev.off()
 ################################################################################
 rm(list=ls())
 
-data <- read_dta(file='CCFF_2023_AGNS.dta')
+data <- read_dta(file='CCFF_2024_AER--AGNS.dta')
 data2 <- data[complete.cases(data), ]
 
 w0 <- model.matrix(~ top_corp_lag3 + lreal_gdp_pc + lpopulation_density + rd_credit_lag3, data=data2)

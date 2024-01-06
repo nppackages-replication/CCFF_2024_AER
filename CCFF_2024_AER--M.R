@@ -1,11 +1,11 @@
 ################################################################################
 # Replication "On Binscatter"
-# Cattaneo, Crump, Farrell and Feng (2023)
-# Date: 8-JUL-2023
+# Cattaneo, Crump, Farrell and Feng (2024)
+# Date: 5-JAN-2024
 # Moretti (2021) Application
 ################################################################################
 
-# source("CCFF_2023_Binscatter_M.R")
+# source("CCFF_2024_AER--M.R")
 
 rm(list=ls())
 
@@ -14,7 +14,7 @@ library(binsreg)
 library(ggplot2)
 library(lfe)
 
-data <- read_dta(file='CCFF_2023_M_1.dta')
+data <- read_dta(file='CCFF_2024_AER--M1.dta')
 data <- subset(data, select=c(y,x, bea_code,year, zd2))
 data = data[complete.cases(data), ]
 
@@ -79,7 +79,7 @@ dev.off()
 
 #### Note that Figure 6(e) may differ from the manuscript because of the evaluation point of the control variables; see the discussion in the Supplemental Appendix
 
-data <- read_dta(file='CCFF_2023_M_2.dta')
+data <- read_dta(file='CCFF_2024_AER--M2.dta')
 data <- subset(data, select=c(y, x, bea_code, year, zd2, cluster1))
 data2 <- data[complete.cases(data), ]
 

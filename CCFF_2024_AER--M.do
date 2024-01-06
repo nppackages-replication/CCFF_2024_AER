@@ -1,14 +1,22 @@
 ********************************************************************************
 * Replication "On Binscatter"
 * Cattaneo, Crump, Farrell, and Feng (2024)
-* Date: 10-NOV-2023
+* Date: 05-JAN-2024
 * M Application
 ********************************************************************************
 
 * ******************************************************************************
 * INSTRUCTIONS
+* 0. Ensure all necessary packages are installed: run CCFF_2024_configStata.do
 * 1. Set main directory below
 * 2. Create folders "graphs" and "data/temp" in this directory
+* ******************************************************************************
+
+* ******************************************************************************
+* NOTE
+* This code produces finalized graphs for the paper using a large number of 
+* simulations (nsims) and gridpoints (simsgrid); code can be sped up substantially
+* by restoring default choices for these two options.
 * ******************************************************************************
 
 clear all
